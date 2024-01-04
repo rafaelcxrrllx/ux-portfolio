@@ -1,0 +1,504 @@
+
+* {
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;/* Default value is 'row' */
+    justify-content: space-between; /* Main axis alignment */
+    align-items: center; /* Cross axis alignment */
+    margin: 0;
+    width: 100%;
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+    padding-right: 5%;
+    position: fixed;
+}
+
+body {
+    background: var(--White, #EEF4ED);
+    flex: 1;
+    z-index: 1;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    color: var(--titles-fineprint, #0B2545);
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 7%;
+}
+
+h2 {
+    color: var(--Subheadings, #134074);
+    /* Subtitle */
+    font-family: Sumana;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 139.572% */
+    letter-spacing: 7%;
+}
+
+#h2{
+    color: var(--Subheadings, #134074);
+    /* Subtitle */
+    font-family: Sumana;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%; /* 139.572% */
+    letter-spacing: 7%;
+    font-size: 24px;
+}
+
+h3 {
+    color: var(--Text, #13315C);
+    /* Text */
+    font-family: Sumana;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    letter-spacing: 7%;
+}
+
+p {
+     color: var(--Text, #13315C);
+    /* Text */
+    font-family: Sumana;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 7%;
+}
+
+a {
+    color: var(--Subheadings, #134074);
+    /* Subtitle */
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 139.572% */
+    letter-spacing: 7%;
+    cursor: pointer;
+}
+
+li {
+    color: var(--Text, #13315C);
+    /* Text */
+    font-family: Sumana;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    letter-spacing: 7%;
+}
+
+a:hover {
+    color: var(--Accents, #8DA9C4);
+}
+
+i {
+    color: var(--Accents, #0B2545);
+    font-size: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#Comment-img {
+    max-width: 80%;
+    height: auto;
+    padding: 15px;
+}
+
+#affinity-img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+#UCI-logo {
+    max-width: 50%;
+    height: auto;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.hamburger {
+    width: 100%; /* Adjust the size as needed */
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: sticky;
+    z-index: 0;
+    margin-top: 10%;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.line {
+     border-top: 3px solid #0B2545;
+     width: 9%;
+     margin: -.3%;
+}
+
+#second-line {
+    width: 6%;
+}
+
+#third-line {
+    width: 3%;
+}
+
+/* Styling for the slide-in menu */
+.menu {
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    margin-top: -10px;
+    right: -280px; /* Initial position outside the viewport */
+    width: 280px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #EEF4ED;
+    overflow-y: auto; /* Enable scrolling if menu content overflows */
+    transition: right 0.5s ease-in-out; /* Smooth transition effect */
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.menu ul li {
+    margin-bottom: 20%;
+    cursor: pointer;
+
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styling for the project menu */
+.project-menu {
+    align-items: flex-start;
+    text-align: left;
+    top: 0;
+    height: auto;
+    background-color: #EEF4ED;
+    overflow-y: auto; /* Enable scrolling if menu content overflows */
+    z-index: 2;
+}
+
+.project-menu ul {
+    list-style: none;
+    text-align: left;
+}
+
+.project-menu ul li {
+    margin-bottom: 0%;
+    cursor: pointer;
+}
+
+.project-menu a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.Title {
+    text-align: center;
+}
+
+/* Flexbox */
+.main {
+    display: flex;
+    flex-direction: row; /* Default value is 'row' */
+    justify-content: space-between; /* Main axis alignment */
+    align-items: flex-start; /* Cross axis alignment */
+    margin: 0;
+    width: 100%;
+}
+
+.main p {
+    line-height: 200%;
+}
+
+.card-content {
+    text-align: left;
+}
+
+.border {
+     border-bottom: 2px solid #8DA9C4;
+}
+
+#Comment-img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+/* Flexbox */
+footer {
+    display: flex;
+    flex-direction: row; /* Default value is 'row' */
+    align-items: flex-end; /* Cross axis alignment */
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100px;
+}
+
+footer .column {
+    flex: 1;
+/*    border: 1px solid #8DA9C4;*/
+    height: auto;
+    text-align: center;
+}
+
+footer .column i {
+    margin-right: 0px;
+}
+
+/* Style for individual columns */
+.column {
+    flex: 1;
+    height: auto;
+    text-align: center;
+}
+
+#quote {
+    text-align: right;
+   
+}
+
+#copyright {
+    margin-right: 0%;
+    text-align: right;
+}
+
+#icons {
+    margin-left: 0%;
+    text-align: left;
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    header {
+        font-size: 24px;
+    }
+    nav {
+        font-size: 18px;
+        margin-top: -10%;
+
+    }
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+        display: inline-block;
+    }
+
+    #icons i{
+    margin-left: 0%;
+    }
+
+    #icons {
+        margin-left: 2%;
+    }
+
+    #quote {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #Mac {
+        text-align: center;
+         display: block;
+         margin: 0;
+         margin-top: 1%;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .project-link i{
+        font-size: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        font-size: 32px;
+    }
+    nav {
+        font-size: 24px;
+        margin-top: -7%;
+    }
+    main {
+        padding: 20px;
+        margin: 5%;
+    }
+    footer {
+        font-size: 18px;
+    }
+    .hamburger {
+        width: 100%; /* Adjust the size as needed */
+        height: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+    header {
+        font-size: 48px;
+    }
+    nav {
+        font-size: 36px;
+        margin-top: -7%;
+    }
+    main {
+        padding: 40px;
+        margin: 2%;
+        margin-top: -9%;
+    }
+    footer {
+        font-size: 24px;
+    }
+    img {
+        max-width: 70%;
+        height: auto;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        font-size: 20px;
+    }
+
+    .section {
+        display: flex;
+        width: 100%;
+        flex-direction: column; /* Default value is 'row' */
+        justify-content: space-between; /* Main axis alignment */
+        align-items: center; /* Cross axis alignment */
+        margin: 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        width: 100%; /* Adjust the size as needed */
+        height: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .card-content img {
+        height: auto;
+        max-width: 70%;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #hero-card {
+        align-items: flex-start;
+    }
+
+    .card-content {
+        flex: 1;
+    }
+
+    .column{
+        flex: 1;
+    }
+
+    .column img {
+        flex: 1;
+    }
+
+    #UCI-logo {
+        max-width: auto;
+        padding: 0px;
+        margin-top: 0%;
+    }
+
+    #Comment-img {
+        max-width: 70%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #affinity-img {
+        max-width: 60%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #hero-img {
+        max-width: 70%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    #three-img {
+        max-width: 80%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    #icons i {
+        margin-right: -4%;
+        padding-left: 0;
+    }
+}

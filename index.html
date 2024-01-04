@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+  <!--
+  WRITTEN BY: Rafael Carrillo Muñoz
+  EMAIL: rafaelcarrillo09@gmail.com
+  -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rafael Carrillo Muñoz">
+    <meta name="description" content="This is my UX Design Portfolio built from scratch!">
+    <!-- my CSS file -->
+    <link rel="stylesheet" href="Index.css">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;600&family=Playfair+Display:wght@500;700&family=Sumana:wght@400;700&display=swap" rel="stylesheet">
+    <!-- My website's Icon -->
+    <link rel="icon" href="Images/seal.png">
+    <!-- my javascript file -->
+    <script src="myscript.js"></script>
+    <!-- My Website's Name -->
+    <title>Portfolio</title>
+  </head>
+
+  <!-- Beginning of browser content -->
+  <body  id="home">
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="#projects"><i id="exit-button" class="fa-solid fa-xmark"></i></a></li>
+          <li><a onclick="openIndex()" >Home</a></li>
+          <li><a onclick="openProjects()">Projects</a></li>
+          <li><a href="Resume/Resume.pdf">Resume</a></li>
+          <li><a onclick="About()">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="hamburger">
+        <div class="line"></div>
+        <div id="second-line" class="line"></div>
+        <div id="third-line" class="line"></div>
+      </div>
+    </nav>
+    <main>
+
+        <!-- Main content goes here -->
+
+
+        <div id="right" class="main">
+          <div class="column">
+            <div id="UCI-card" class="card">
+              <img id="headshot" src="Images/headshot.png" alt="Headshot of author">
+              <div class="card-content">
+                <h3>
+          Hello, my name is
+        </h3>
+        <h1>Rafael Carrillo Muñoz</h1>
+        </br>
+        <h2>
+          I create websites, apps, and designs.
+        </h2>
+        </br>
+        <p id="Hero-text">
+          Located in Los Angeles, California
+        </p>
+        </br>
+        </br>
+        </br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="border"></div>
+        </br>
+        <div class="Title">
+          <h2>
+              Education
+          </h2> 
+        </div>
+        <div id="right" class="main">
+          <div class="column">
+            <div id="UCI-card" class="card">
+              <img id="UCI-logo" src="Images/uci-logo.png" alt="UCI logo">
+              <div class="card-content">
+                <h2>University of California, Irvine</h2>
+                
+                <p>Class of 2024</p>
+                <div class="border">
+                </div>
+                <h3>I am pursing a Bachelor of Science with a Major in Informatics specializing in Human-Computer Interaction with a Minor in Informations and Computer Science.</h3>
+                <a href="https://www.informatics.uci.edu/">Informatics @ UCI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </br>
+        <div class="border"></div>
+        </br>
+        <div class="Title">
+          <h2>
+              Projects
+          </h2>
+
+        </div>
+        <div id="projects" class="main">
+          <div class="column">
+            <div class="card">
+              <img id="affinity-img" src="Images/demoday.png" alt="A picture of TXT's DemoDay">
+              <div class="card-content">
+                <h2>Teens Exploring Technology</h2>
+                <div class="border">
+                </div>
+                <h3>Design Lead</h3>
+                <p>June 2023 - August 2023</p>
+                </br>
+                <a onclick="txtlead()">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="section">
+
+        <div id="right" class="main">
+          <div class="column">
+            <div class="card">
+              <img src="Images/iPhone14png.png" alt="Mockups of the App RecipEZ">
+                <div class="card-content">
+                  <h2>Design at UCI</h2>
+                  <div class="border">
+                  </div>
+                  <h3>UX/UI Designer</h3>
+                  <p>April 2023 - June 2023</p>
+                  </br>
+                  <a onclick="designUCI()">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div id="right" class="main">
+      <div class="column">
+        <div class="card">
+          <img id="affinity-img" src="Images/art-2.png" alt="A board covered of colorful sticky notes">
+          <div class="card-content">
+            <h2>Social & Technological Action Research Lab</h2>
+            <div class="border">
+            </div>
+            <h3>Research Assistant</h3>
+            <p>December 2022 - June 2023</p>
+            </br>
+            <a onclick="research()">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div id="left" class="main">
+      <div class="column">
+        <div class="card">
+          <img id="Comment-img" src="Images/Frame74.png" alt="An image of Hustl N Code's Post-feature">
+          <div class="card-content">
+            <h2>Hustle N' Code</h2>
+            <div class="border">
+            </div>
+            <h3>UX/UI Designer</h3>
+            <p>December 2022 - March 2023</p>
+            </br>
+            <a onclick="hustle()">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="left" class="main">
+      <div class="column">
+        <div class="card">
+          <img id="affinity-img" src="Images/CTC.png" alt="Commit The Change's Logo">
+          <div class="card-content">
+            <h2>CTC at UCI</h2>
+            <div class="border">
+            </div>
+            <h3>Design Lead</h3>
+            <p>June 2023 - Present</p>
+            </br>
+            <a>In Progress</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content goes here -->
+    <div class="border"></div>
+      </br>
+      <h1>Let's Create</h1>
+      </br>
+      <h2>
+        Hire me for your latest tech projects.
+      </h2>
+      </br>
+      <h3>
+        rafaelcarrillo09@gmail.com
+      </h3>
+    </main>
+
+    <footer>
+      <div id="icons" class="column">
+        <a href="https://www.instagram.com/rafaelcxrrllx/"><i href="https://www.instagram.com/rafaelcxrrllx/"class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rafaelcxrrllx/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <p> 2023 © Rafael Carrillo Muñoz</p>
+      </div>
+      <div id="copyright" class="column">
+        <p id="quote"> "No matter where life takes me, find me with a smile" <span id="Mac">- Mac Miller</span></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
